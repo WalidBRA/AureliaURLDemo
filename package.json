@@ -1,4 +1,5 @@
 {
+  "homepage": "https://WalidBRA.github.io/AureliaURLDemo",
   "name": "AureliaURLDemo",
   "description": "An Aurelia client application.",
   "version": "0.1.0",
@@ -60,6 +61,8 @@
   "scripts": {
     "build": "webpack --env production",
     "start": "webpack server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:dev": "webpack",
     "analyze": "webpack --env production --analyze",
     "test": "au test"
