@@ -62,7 +62,7 @@
     "build": "webpack --env production",
     "start": "webpack server",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build:dev": "webpack",
     "analyze": "webpack --env production --analyze",
     "test": "au test"
